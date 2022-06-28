@@ -9,7 +9,6 @@
 
 import csv 
 import os
-from weakref import WeakValueDictionary
 
 # Assign a variable for the file to load and the path
 
@@ -68,44 +67,64 @@ with open(file_to_load) as election_data:
 
         # Add to specific candidate vote count
         candidate_votes[candidate_name] += 1
-
-# Iterate through candidate list 
-for candidate_name in candidate_votes:
         
-    # Retrieve vote count of a candidate
-    votes = candidate_votes[candidate_name]
+    
+# Save the results to our text file
+with open(file_to_save, 'w') as txt_file:
 
-    # Calculate percentage of votes
-    vote_percentage = (float(votes) / float(total_votes)) * 100
+# Print the final vote count to the terminal.
+    election_results = (
+        f"\nElection Results\n"
 
-    # Print the candidate name and percentage of votes
-    print(f'{candidate_name}: {vote_percentage: .1f}% ({votes:,})\n')
+        f"-------------------------\n"
 
-    # Determine winning vote count and candidate
-    # Determine if the votes is greater than the winning count
-    if (votes > winning_count) and (vote_percentage > winning_percentage):
+        f"Total Votes: {total_votes:,}\n"
 
-        # If true then set winning_count = votes and winning_percentage = votes_percentage
-        winning_count = votes
+        f"-------------------------\n")
 
-        winning_percentage = vote_percentage
+    print(election_results, end="")
 
-        # And set the winning_candidate = candidate_name
-        winning_candidate = candidate_name
+    # Save the final vote count to the text file.
+    txt_file.write(election_results)
 
-winning_candidate_summary = (
 
-    f'-------------------------\n'
+    # Iterate through candidate list 
+    for candidate_name in candidate_votes:
+            
+        # Retrieve vote count of a candidate
+        votes = candidate_votes[candidate_name]
 
-    f'Winner: {winning_candidate}\n'
+        # Calculate percentage of votes
+        vote_percentage = (float(votes) / float(total_votes)) * 100
 
-    f'Winning Vote Count: {winning_count:,}\n'
+        # Print the candidate name and percentage of votes
+        print(f'{candidate_name}: {vote_percentage: .1f}% ({votes:,})\n')
 
-    f'Winning Percentage: {winning_percentage:.1f}%\n'
+        # Determine winning vote count and candidate
+        # Determine if the votes is greater than the winning count
+        if (votes > winning_count) and (vote_percentage > winning_percentage):
 
-    f'-------------------------\n')
+            # If true then set winning_count = votes and winning_percentage = votes_percentage
+            winning_count = votes
 
-print(winning_candidate_summary)
+            winning_percentage = vote_percentage
+
+            # And set the winning_candidate = candidate_name
+            winning_candidate = candidate_name
+
+    winning_candidate_summary = (
+
+        f'-------------------------\n'
+
+        f'Winner: {winning_candidate}\n'
+
+        f'Winning Vote Count: {winning_count:,}\n'
+
+        f'Winning Percentage: {winning_percentage:.1f}%\n'
+
+        f'-------------------------\n')
+
+    print(winning_candidate_summary)
 
 
 
