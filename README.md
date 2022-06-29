@@ -44,6 +44,10 @@ The analysis of the election show that:
  ![County Results](Resources/County_Results.png)
 
 ## Election-Audit Summary
-This script can be used for any election, the only item that might need to be changed is the row number to extract the candidate and county name.
+This script can be used for any election, an item that might need to be changed is the row number to extract the candidate and county name.
 
 ![Script Modification](Resources/Script_Modifications.png)
+
+Another item that may need a modification is the file path. This may need some tweaking depending on where the file is stored, or the path is direct or indirect.
+
+![File Path Modification](Resources/File_Path_Modification.png
