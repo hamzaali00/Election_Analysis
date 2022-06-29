@@ -50,4 +50,4 @@ This script can be used for any election, an item that might need to be changed 
 
 Another item that may need a modification is the file path. This may need some tweaking depending on where the file is stored, or the path is direct or indirect.
 
-![File Path Modification](Resources/File_Path_Modification.png
+![File Path Modification](Resources/File_Path_Modification.png)
