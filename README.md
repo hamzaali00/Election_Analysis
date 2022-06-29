@@ -16,6 +16,7 @@ The purpose of this data analysis was to extract data from a .cvs file to:
 ## Election-Audit Results
 The analysis of the election show that:
  - There were 369,711 votes cast in the election
+ 
  ![Total Votes](Resources/Total_Votes.png)
  - The candidates were:
     - Charles Casper Stockham
