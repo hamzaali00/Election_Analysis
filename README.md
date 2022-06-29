@@ -50,6 +50,6 @@ An item that might need to be changed is the row number to extract the candidate
 
 ![Script Modification](Resources/Script_Modifications.png)
 
-Another item that may need a modification is the file path. This may need some tweaking depending on where the file is stored, or the path is direct or indirect.
+Another item that may need a modification is the file path. This will be modified depending on how and where the file is stored, or if the path is direct or indirect.
 
 ![File Path Modification](Resources/File_Path_Modification.png)
