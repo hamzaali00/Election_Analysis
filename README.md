@@ -28,6 +28,7 @@ The analysis of the election show that:
     - Raymon Anthony Doane received 3.1% of the vote and 11,606 number of votes
  - The winner of the election was:
     - Diana DeGette, who receive 73.8% of the vote and 272,892 number of votes
+ 
  ![Candidate Results](Resources/Candidate_Results.png)
  - The counties that voted were:
     - Jefferson
@@ -39,6 +40,7 @@ The analysis of the election show that:
     - 24,801 number of votes or 6.7% of the vote came from Arapahoe county
  - The county with the largest voter turnout was:
     - Denver had the largest voter turnout with 82.8% of the vote and 306,055 number of votes
+ 
  ![County Results](Resources/County_Results.png)
 
 ## Election-Audit Summary
