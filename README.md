@@ -39,4 +39,5 @@ The analysis of the election show that:
 
 ## Election-Audit Summary
 This script can be used for any election, the only item that might need to be changed is the row number to extract the candidate and county name.
+
 ![Script Modification](Resources/Script_Modifications.png)
